@@ -909,7 +909,7 @@
                                         <h3>Вариант ${index + 1}. ${option.name}</h3>
                                         <p>${option.description}</p>
                                         <ul>
-                                            <li><span class="param">Стоимость:</span> ${option.cost} тыс мгр</li>
+                                            <li><span class="param">Стоимость:</span> ${option.cost} тыс. мгр</li>
                                             <li><span class="param">Риски:</span> ${option.risks}</li>
                                             <li><span class="param">Добыча:</span> ${option.yield} млн баррелей</li>
                                             <li><span class="param">Эко-последствия:</span> ${option.eco}</li>
@@ -995,7 +995,7 @@
             let resultHTML = `
         <div class="result-item">
             <p><strong>Результат:</strong> ${outcome.text}</p>
-            <p><strong>Затрачено:</strong> <span class="${currentOption.cost > 0 ? 'negative' : ''}">${currentOption.cost} тыс мгр</span></p>
+            <p><strong>Затрачено:</strong> <span class="${currentOption.cost > 0 ? 'negative' : ''}">${currentOption.cost} тыс. мгр</span></p>
             <p><strong>Добыто:</strong> <span class="positive">${currentOption.yield + outcome.yield} млн баррелей</span></p>
             <p><strong>Изменения в эко-баллах:</strong>
                 <span class="${outcome.eco > 0 ? 'positive' : outcome.eco < 0 ? 'negative' : ''}">
